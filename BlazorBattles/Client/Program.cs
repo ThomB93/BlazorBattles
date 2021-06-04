@@ -23,6 +23,7 @@ namespace BlazorBattles.Client
             builder.Services.AddScoped<IBananaService, BananaService>();
             builder.Services.AddScoped<IUnitService, UnitService>();
             builder.Services.AddBlazoredToast();
+            builder.Services.AddScoped<CustomAuthStateProvider, CustomAuthStateProvider>();
 
             await builder.Build().RunAsync();
         }

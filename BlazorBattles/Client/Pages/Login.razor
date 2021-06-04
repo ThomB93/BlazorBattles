@@ -12,13 +12,13 @@ else
         <p>
             <label>Username</label>
             <div>
-                <InputText @bind-Value="@user.UserName" id="username"></InputText>
+                <InputText @bind-Value="@user.UserName" id="username" class="form-control"></InputText>
             </div>
         </p>
         <p>
             <label>Password</label>
             <div>
-                <InputText @bind-Value="@user.Password" id="password" type="password"></InputText>
+                <InputText @bind-Value="@user.Password" id="password" type="password" class="form-control"></InputText>
             </div>
         </p>
         <button class="btn btn-primary" type="submit">Login</button>
